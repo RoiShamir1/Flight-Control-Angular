@@ -1,0 +1,40 @@
+<!-- <div class="container">
+  <div *ngFor="let logger of loggers">
+    <app-logger
+      [logger]="logger"
+      (onDelete)="deleteLogger($event)"
+    ></app-logger>
+  </div>
+  <div *ngIf="errorMessage">
+    {{ errorMessage }}
+  </div>
+</div> -->
+<h3 class="text-center">All the loggers</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Logger Id</th>
+      <th scope="col">flightId</th>
+      <th scope="col">Get in</th>
+      <th scope="row">Get out</th>
+      <th scope="row">Terminal</th>
+      <th scope="row">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let logger of loggers">
+      <td scope="col">{{ logger.id }}</td>
+      <td scope="col">{{ logger.flightId }}</td>
+      <td scope="col">{{ logger.getIn | date : "yyyy-MM-ddTHH:mm:ss" }}</td>
+      <td>{{ logger.getOut | date : "yyyy-MM-ddTHH:mm:ss" }}</td>
+      <td>{{ logger.leg.id}}</td>
+      <!-- <td><button (click)="deleteHandler()">Delete logger</button></td> -->
+      <td>
+        <nav>
+          <a [routerLink]="'/loggers/' + logger.id"> Logger Details </a>
+        </nav>
+      </td>
+    </tr>
+  </tbody>
+</table>

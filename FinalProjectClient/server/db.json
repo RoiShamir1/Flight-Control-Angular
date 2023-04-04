@@ -1,0 +1,49 @@
+{
+  "loggers": [
+    {
+      "id": 1,
+      "leg": {
+        "id": 1,
+        "number": 1,
+        "waitTime": 3,
+        "flightId": null,
+        "currentLeg": 1,
+        "nextLegs": 2,
+        "isChangeStatus": false
+      },
+      "flightId": 1,
+      "getIn": "2023-03-28T12:59:12.1875507",
+      "getOut": "2023-03-28T12:59:15.2692447"
+    },
+    {
+      "id": 2,
+      "leg": {
+        "id": 1,
+        "number": 1,
+        "waitTime": 3,
+        "flightId": null,
+        "currentLeg": 1,
+        "nextLegs": 2,
+        "isChangeStatus": false
+      },
+      "flightId": 1,
+      "getIn": "2023-03-28T12:59:15.3391111",
+      "getOut": "2023-03-28T12:59:20.3600485"
+    },
+    {
+      "id": 3,
+      "leg": {
+        "id": 2,
+        "number": 2,
+        "waitTime": 5,
+        "flightId": 11,
+        "currentLeg": 2,
+        "nextLegs": 4,
+        "isChangeStatus": false
+      },
+      "flightId": 1,
+      "getIn": "2023-03-28T12:59:20.3660567",
+      "getOut": "2023-03-28T12:59:26.3798804"
+    }
+  ]
+}

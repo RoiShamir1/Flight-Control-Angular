@@ -1,0 +1,22 @@
+.error {
+  color: red;
+}
+
+form {
+  width: 250px;
+}
+
+form button:hover {
+  background-color: darkblue;
+}
+
+form button {
+  background-color: blue;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 80px;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+  <h3>Logger Id: {{ logger.id }}</h3>
+  <div>Flight Id: {{ logger.flightId }}</div>
+  <div>Time get in: {{ logger.getIn | date : "yyyy-MM-ddTHH:mm:ss" }}</div>
+  <div>Time get out: {{ logger.getOut | date : "yyyy-MM-ddTHH:mm:ss" }}</div>
+  <div>Terminal number: {{ logger.leg.id }}</div>
+  <!-- <button (click)="deleteHandler()">Delete logger</button> -->
+  <nav>
+    <a [routerLink]="'/loggers/'"> Return to home page </a>
+  </nav>
+</div>
